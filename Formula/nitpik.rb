@@ -2,25 +2,25 @@ class Nitpik < Formula
   desc "AI-powered code review CLI"
   homepage "https://nitpik.dev"
   license "BUSL-1.1"
-  version "1.3.1" # updated automatically by CI
+  version "1.3.2" # updated automatically by CI
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/nitpik/releases/download/v#{version}/nitpik-aarch64-apple-darwin.tar.gz"
-      sha256 "e4432f40cb883ea83db878dfee6f83528145b15e5276dbf7e077a4d84830c4ee" # updated automatically by CI
+      sha256 "bd313dd0ab7850bdd547e5cdb2ad923e3949fd65a93eadac80765d73e99bd786" # updated automatically by CI
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/nitpik/releases/download/v#{version}/nitpik-x86_64-apple-darwin.tar.gz"
-      sha256 "9a1808ea2cfca5111645381c115f4eaf7ecc88576367251fafa13c5530b79f94"
+      sha256 "90ee11d101f8369e805857e2bdf90d77957de2ba5ea6147069fb7a75ef811c22"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/nitpik/releases/download/v#{version}/nitpik-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d85e7f394fe99f901a43e2031f8a944ca1eb9152961f46b64a53b0624c568a7a"
+      sha256 "f3184fe9254f40febe7849d04707f34bc6f0c8ac42b58fb52e0ce52ae87407ca"
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/nitpik/releases/download/v#{version}/nitpik-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ce2fb483be5fd7731bee8a90822a78c7470fee569757d7cc7ee1edf54928f382"
+      sha256 "4642573c8ce934ad019f3edc5c040276523ac4643d354be95dceb58dba3669b3"
     end
   end
 
